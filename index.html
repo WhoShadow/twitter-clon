@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Twitter</title>
+    <!-- CSS FILE LINK -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/bf1c643ee2.js" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+</head>
+
+<body class="">
+    <div class="container-fluid container-md">
+                   <!-- xs NAV BAR -->
+                <nav class=" bg-light xs-nav fixed-bottom    d-sm-none">
+                    <div class="container-fluid">
+                        <div class="row h-50">
+                            <div class="col-3">
+                                <span><i class="fa-solid fa-house fs-3 py-3"></i></span>
+                            </div>
+                            <div class="col-3">
+                            <span><i class="fa-solid fa-magnifying-glass fs-2 py-3 "></i></span>
+                            </div>
+                            <div class="col-3">
+                            <span><i class="fa-solid fa-bell fs-2 py-3"></i></span>
+                            </div>
+                            <div class="col-3 ">
+                                <span><i class="fa-solid fa-envelope fs-2 py-3"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+        <div class="row ">
+            <!-- LEFT SIDE BAR -->
+            <div
+                class="d-none col-sm-2  d-sm-block  col-md-3 col-lg-3 d-flex flex-column text-sm-end text-md-start  align-items-lg-start left_sidebar border-end ">
+                <div>
+                    <span><i class="fa-brands fa-twitter display-5 text-info py-3  "></i></span>
+                    
+                </div>
+                <div class="d-flex align-items-center justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-house fs-3 py-3"></i></span>
+                    <p class="d-none d-md-block fs-4 pt-3 ps-2 fw-bold">Inicio</p>
+                </div>
+                <div class="d-flex align-items-center d-block d-md-none  justify-content-sm-end justify-content-md-start justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-magnifying-glass fs-2 py-3 "></i></span>
+                    <!-- <p class="d-none d-lg-block fs-3 pt-3 ps-1">Home</p> -->
+                </div>
+                <div class="d-flex align-items-center  justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-hashtag fs-2 py-3 d-none d-md-block"></i></span>
+                    <p class="d-none d-md-block fs-4 pt-3 ps-2">Explorar</p>
+                </div>
+                <div class="d-flex align-items-center  justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-bell fs-2 py-3"></i></span>
+                    <p class="d-none d-md-block fs-4 pt-3 ps-2">Notificaciones</p>
+                </div>
+                <div class="d-flex align-items-center  justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-envelope fs-2 py-3"></i></span>
+                    <p class="d-none d-md-block fs-4 pt-3 ps-2">Mensajes</p>
+                </div>
+                <div class="d-flex align-items-center  justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-bookmark fs-2 py-3"></i></span>
+                    <p class="d-none d-md-block fs-4 pt-3 ps-2">Guardados</p>
+                </div>
+                <div class="d-flex align-items-center  justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-file-lines fs-2 py-3"></i></span>
+                    <p class="d-none d-md-block fs-4 pt-3 ps-2">Listas</p>
+                </div>
+                <div class="d-flex align-items-center  justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-user fs-2 py-3"></i></span>
+                    <p class="d-none d-md-block fs-4 pt-3 ps-2">Perfil</p>
+                </div>
+                <div class="d-flex align-items-center  justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-ellipsis fs-2 py-3"></i></span>
+                    <p class="d-none d-md-block fs-4 pt-3 ps-2">Más Opciones</p>
+                </div>
+            </div>
+
+            <!-- MAIN SECTION -->
+            <div class="col-12 col-sm-10 col-md-9 col-lg-6  main_bar ">
+                <div class="row d-flex justify-content-between align-items-center ps-1">
+                    <div class="col-1 pt-2">
+                        <div><span class="fs-4 fw-bold">Inicio</span></div>
+                    </div>
+                    <div class="col-1 me-3">
+                        <div><span class="fs-4"><i class="fa-solid fa-star"></i> </span></div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col pt-2 ">
+                        <div class="row">
+                            <div class="col-2">
+                                <img class="rounded-circle" src="https://pbs.twimg.com/profile_images/1631897527854284808/PeTlcUS7_400x400.jpg" alt="" height="50px">
+                            </div>
+                            <div class="col-9 col-sm-10 ">
+                                <input class="border-0 bg  form-control-lg" type="text" placeholder="¡¿Qué está pasando?!">
+                                <div class="ps-3 d-flex text-info">
+                                    <p><span><i class="fa-solid fa-earth-americas "></i></span></p>
+                                    <p class="fw-bold ps-1 "></p>
+                                    <hr>
+                                </div>
+                                <div class="row pb-2 justify-content-center">
+                                    <div class="col-9 text-info">
+                                        <span class="ps-3"><i class="fa-solid fa-image"></i></span>
+                                        <span class="ps-3"><i class="fa-solid fa-gift"></i></span>
+                                        <span class="ps-3"><i class="fa-solid fa-face-grin"></i></span>
+                                        <span class="ps-3"><i class="fa-solid fa-location-pin"></i></span>
+                                    </div>
+                                    <div class="col-3 col-sm-2  ">
+                                        <a class="text-decoration-none fs-6  fw-bold text-white bg-info py-1 px-3  rounded-pill"
+                                            href="#">Tweet</a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="row  d-flex  justify-content-between align-items-center border">
+                            <div class="col-11 col-sm-10 ps-5  pt-1 d-flex pt-2">
+                                <span><i class="fa-solid fa-comment"></i></span>
+                                <p class="ps-1">. <span class="text-info fw-bold ">Mostrar Tweets</span></p>
+                            </div>
+                            <div class="col-1 col-sm-2 text-end fs-5 pt-2 ps-2">
+                                <span><i class="fa-solid fa-xmark"></i></span>
+                            </div>
+                        </div>
+                        <!-- TWEET 1 -->
+                        <div class="row mt-1 border d-flex  ">
+                            <div class="col-3 mt-2">
+
+                                <img class="rounded-circle" src="https://pbs.twimg.com/profile_images/1683328222044332032/xRFKgRSy_400x400.jpg" alt="" height="50px">
+                            </div>
+                            <div class="col-9 ">
+                                <div class="row d-flex justify-content-between align-items-center ps-1">
+                                    <div class="col-10 pt-2 ">
+                                        <div>
+                                            <p><span class="fw-bold">BoyWithUke </span>@boywithukes . 5h</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 me-2 ps-0">
+                                        <div><span><i class="fa-solid fa-ellipsis fs-5 py-3"></i></span></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    LUCID DREAMS DROPPING OCTOBER 6 PRESAVE THAT SHIIIII <span class="text-info"></span>
+                                    <br>
+                                    <div class="row pt-4">
+                                        <div class="col"><span><i class="fa-solid fa-comment"></i></span></div>
+                                        <div class="col"><span><i class="fa-solid fa-share-from-square"></i></span>
+                                        </div>
+                                        <div class="col"><i class="fa-solid fa-heart"></i></div>
+                                        <div class="col"><span><i class="fa-solid fa-share-nodes"></i></span></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- TWEET 2 -->
+                        <div class="row mt-1 border d-flex  ">
+                            <div class="col-3 mt-2">
+                        
+                                <img class="rounded-circle" src="https://pbs.twimg.com/profile_images/1679500137402626049/6iQ9A9hb_400x400.jpg" alt="" height="50px">
+                            </div>
+                            <div class="col-9 ">
+                                <div class="row d-flex justify-content-between align-items-center ps-1">
+                                    <div class="col-10 pt-2 ">
+                                        <div>
+                                            <p><span class="fw-bold">Myamura </span>@king_jin_woo . 7</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 me-2 ps-0">
+                                        <div><span><i class="fa-solid fa-ellipsis fs-5 py-3"></i></span></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    NOOOOO 😭😭 My twitter app auto updated to 𝕏 <span class="text-info"></span> Goodbye birb🐦
+                                    <br>
+                                    <div class="row pt-4">
+                                        <div class="col"><span><i class="fa-solid fa-comment"></i></span></div>
+                                        <div class="col"><span><i class="fa-solid fa-share-from-square"></i></span>
+                                        </div>
+                                        <div class="col"><i class="fa-solid fa-heart"></i></div>
+                                        <div class="col"><span><i class="fa-solid fa-share-nodes"></i></span></div>
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        </div>
+
+
+                        <!-- TWEET 3 -->
+                        <div class="row mt-1 border d-flex  ">
+                            <div class="col-3 mt-2">
+                        
+                                <img class="rounded-circle" src="https://pbs.twimg.com/profile_images/1672757785769943040/xN_wGs5r_400x400.jpg" alt="" height="50px">
+                            </div>
+                            <div class="col-9 ">
+                                <div class="row d-flex justify-content-between align-items-center ps-1">
+                                    <div class="col-10 pt-2 ">
+                                        <div>
+                                            <p><span class="fw-bold">Hasvik </span>@hasvikMC . 19h</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 me-2 ps-0">
+                                        <div><span><i class="fa-solid fa-ellipsis fs-5 py-3"></i></span></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    Pronto cae <span class="text-info"></span> 
+                                    <br>
+                                    <div class="row pt-4">
+                                        <div class="col"><span><i class="fa-solid fa-comment"></i></span></div>
+                                        <div class="col"><span><i class="fa-solid fa-share-from-square"></i></span>
+                                        </div>
+                                        <div class="col"><i class="fa-solid fa-heart"></i></div>
+                                        <div class="col"><span><i class="fa-solid fa-share-nodes"></i></span></div>
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        </div>
+
+                        <!-- TWEET 4 -->
+                        <div class="row mt-1 border d-flex  ">
+                            <div class="col-3 mt-2">
+                        
+                                <img class="rounded-circle" src="https://pbs.twimg.com/profile_images/1674082815699296256/qML0yf8N_400x400.jpg" alt="" height="50px">
+                            </div>
+                            <div class="col-9 ">
+                                <div class="row d-flex justify-content-between align-items-center ps-1">
+                                    <div class="col-10 pt-2 ">
+                                        <div>
+                                            <p><span class="fw-bold">All Things Raimi Spider-Man </span>@EARTH_96283 . 8h</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 me-2 ps-0">
+                                        <div><span><i class="fa-solid fa-ellipsis fs-5 py-3"></i></span></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    Happy Spider-Man Day! <span class="text-info">#SpiderManDay</span> 
+                                    <br>
+                                    <div class="row pt-4">
+                                        <div class="col"><span><i class="fa-solid fa-comment"></i></span></div>
+                                        <div class="col"><span><i class="fa-solid fa-share-from-square"></i></span>
+                                        </div>
+                                        <div class="col"><i class="fa-solid fa-heart"></i></div>
+                                        <div class="col"><span><i class="fa-solid fa-share-nodes"></i></span></div>
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        </div>
+
+                        <!-- TWEET 5 -->
+                        <div class="row mt-1 border d-flex  ">
+                            <div class="col-3 mt-2">
+                        
+                                <img class="rounded-circle" src="https://pbs.twimg.com/profile_images/1686187317894250496/mW5y0CyD_400x400.jpg" alt="" height="50px">
+                            </div>
+                            <div class="col-9 ">
+                                <div class="row d-flex justify-content-between align-items-center ps-1">
+                                    <div class="col-10 pt-2 ">
+                                        <div>
+                                            <p><span class="fw-bold">̶tyler joseph once said ⊬ </span>@TylerOnceSaid
+                                                . 23h</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 me-2 ps-0">
+                                        <div><span><i class="fa-solid fa-ellipsis fs-5 py-3"></i></span></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    my thirteenth reason why <span class="text-info"></span> 
+                                    <br>
+                                    <div class="row pt-4">
+                                        <div class="col"><span><i class="fa-solid fa-comment"></i></span></div>
+                                        <div class="col"><span><i class="fa-solid fa-share-from-square"></i></span>
+                                        </div>
+                                        <div class="col"><i class="fa-solid fa-heart"></i></div>
+                                        <div class="col"><span><i class="fa-solid fa-share-nodes"></i></span></div>
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- RIGHT SIDE BAR -->
+            <div class="col-lg-3 d-none d-lg-block  w-25 h-25 right_side_bar">
+                <div class="">
+                    <div class="bg-opacity-10 bg-black rounded-pill">
+                        <div class="row d-flex align-items-center ">
+                            <div class="col-2 text-end fs-4">
+                                <span><i class="fa-solid fa-magnifying-glass ps-4"></i></span>
+                            </div>
+                            <div class="col-10"><input type="text"
+                                    class="form-control-lg border-0 me-1 w-75 bg-transparent"
+                                    placeholder="Buscar en Twitter"></div>
+                        </div>
+                    </div>
+                    <div class="row bg-opacity-10 bg-black mx-1 my-2 pb-3 rounded-3">
+                        <div class="col">
+                            <div class="trending">
+                                <p class="fs-6 fw-bold py-2">Qué esta pasando</p>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="m-0">Entretenimiento . Tendencia </p>
+                                    </div>
+                                    <div class="col-3 text-end">
+                                        <span><i class="fa-solid fa-ellipsis pe-2"></i></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="fs-6 fw-bold mb-0">#SpiderManDay</p>
+                                        <p class="">37.3 mil Tweets</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="m-0">Música . Tendencia</p>
+                                    </div>
+                                    <div class="col-3 text-end">
+                                        <span><i class="fa-solid fa-ellipsis pe-2"></i></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="fs-6 fw-bold mb-0">Bad Bunny </p>
+                                        <p class="">9,315 mil Tweets</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="m-0">Gaming . Tendencia </p>
+                                    </div>
+                                    <div class="col-3 text-end">
+                                        <span><i class="fa-solid fa-ellipsis pe-2"></i></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="fs-6 fw-bold mb-0">#XboxGamePass</p>
+                                        <p class="">1,557 mil Tweets</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="m-0">Entretenimiento . Tendencia</p>
+                                    </div>
+                                    <div class="col-3 text-end">
+                                        <span><i class="fa-solid fa-ellipsis pe-2"></i></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="fs-6 fw-bold mb-0">#The Batman </p>
+                                        <p class="">12 mil Tweets</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="m-0">Gaming . Tendencia </p>
+                                    </div>
+                                    <div class="col-3 text-end">
+                                        <span><i class="fa-solid fa-ellipsis pe-2"></i></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="fs-6 fw-bold mb-0">Starfield</p>
+                                        <p class="">9,435 mil Tweets</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="m-0">Tendencia en México </p>
+                                    </div>
+                                    <div class="col-3 text-end">
+                                        <span><i class="fa-solid fa-ellipsis pe-2"></i></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="fs-6 fw-bold mb-0">#CDMX </p>
+                                        <p class="">13,3 mil Tweets</p>
+                                    </div>
+                                </div>
+
+                                <span class="text-info">Mostrar más </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
